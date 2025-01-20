@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>politica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">politica</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-checkbox>acepta nuestas conditiones de privacidad <a href="/inicio" (click)="$event.stopPropagation()">condiciones de privacidad</a></ion-checkbox>
+
+  <!-- Basic -->
+
+<!-- Before -->
+<ion-item>
+  <ion-label>Checkbox Label</ion-label>
+  <ion-checkbox></ion-checkbox>
+</ion-item>
+
+<!-- After -->
+<ion-item>
+  <ion-checkbox>Checkbox Label</ion-checkbox>
+</ion-item>
+
+<!-- Fixed Labels -->
+
+<!-- Before -->
+<ion-item>
+  <ion-label position="fixed">Checkbox Label</ion-label>
+  <ion-checkbox></ion-checkbox>
+</ion-item>
+
+<!-- After -->
+<ion-item>
+  <ion-checkbox label-placement="fixed">Checkbox Label</ion-checkbox>
+</ion-item>
+
+<!-- Checkbox at the start of line, Label at the end of line -->
+
+<!-- Before -->
+<ion-item>
+  <ion-label slot="end">Checkbox Label</ion-label>
+  <ion-checkbox></ion-checkbox>
+</ion-item>
+
+<!-- After -->
+<ion-item>
+  <ion-checkbox label-placement="end">Checkbox Label</ion-checkbox>
+</ion-item>
+
+
+<ion-button routerLink="/inicio">inicio</ion-button>    
+
+</ion-content>
+
+

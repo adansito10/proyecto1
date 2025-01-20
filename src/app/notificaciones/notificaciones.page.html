@@ -1,0 +1,97 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>notificaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">notificaciones</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-segment [scrollable]="true" value="heart">
+    <ion-segment-button value="home">
+      <ion-icon name="home"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="heart">
+      <ion-icon name="heart"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="pin">
+      <ion-icon name="pin"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="star">
+      <ion-icon name="star"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="call">
+      <ion-icon name="call"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="globe">
+      <ion-icon name="globe"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="basket">
+      <ion-icon name="basket"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="barbell">
+      <ion-icon name="barbell"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="trash">
+      <ion-icon name="trash"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="person">
+      <ion-icon name="person"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-list>
+    <ion-item>
+      <ion-select label="que prefires?" placeholder="escoge tu favorito">
+        <ion-select-option value="apple">un negro de dos metros</ion-select-option>
+        <ion-select-option value="banana">que tu novia te sea infiel</ion-select-option>
+        <ion-select-option value="orange">o nacer gay</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-select label="Fixed label" label-placement="fixed" placeholder="Favorite fruit">
+        <ion-select-option value="apple">Apple</ion-select-option>
+        <ion-select-option value="banana">Banana</ion-select-option>
+        <ion-select-option value="orange">Orange</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-select label="Stacked label" label-placement="stacked">
+        <ion-select-option value="apple">Apple</ion-select-option>
+        <ion-select-option value="banana">Banana</ion-select-option>
+        <ion-select-option value="orange">Orange</ion-select-option>
+      </ion-select>
+    </ion-item>
+  
+    <ion-item>
+      <ion-select label="Floating label" label-placement="floating">
+        <ion-select-option value="apple">Apple</ion-select-option>
+        <ion-select-option value="banana">Banana</ion-select-option>
+        <ion-select-option value="orange">Orange</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-list>
+  <ion-item>
+    <ion-select placeholder="Select a Fruit">
+      <div slot="label">fruta favorita <ion-text color="danger">(obligatorio)</ion-text></div>
+      <ion-select-option value="apple">Apple</ion-select-option>
+      <ion-select-option value="banana">Banana</ion-select-option>
+      <ion-select-option value="orange">Orange</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+<ion-button routerLink="/inicio">inicio</ion-button>    
+
+
+
+</ion-content>
