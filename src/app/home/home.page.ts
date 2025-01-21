@@ -13,7 +13,7 @@ export class HomePage implements OnInit{
 
   ngOnInit(){
     console.log("hola mundo");
-    console.log("este es el primer componentes");
+    console.log("Bieenvenido a la pagina de inicio");
 
   }
 

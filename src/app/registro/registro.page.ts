@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { ToastController } from '@ionic/angular';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-registro',
@@ -34,10 +35,7 @@ export class RegistroPage implements OnInit {
     }
 
   
-    if (!/^\d+$/.test(this.number)) {
-      this.presentToast('solo se permiten dígitos', 'top');
-      return;
-    }
+  
 
 
     this.navController.navigateRoot('/inicio');
@@ -58,4 +56,9 @@ export class RegistroPage implements OnInit {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   }
+
+  regist(form: NgForm) {
+    console.log(form.valid);
+  }
+
 }
